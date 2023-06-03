@@ -10,7 +10,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    height: 100vh;
+    min-height: 100vh;
+    width: auto;
 }
 
 /* Header */
@@ -163,6 +164,9 @@ body {
 
 /* @media */
 @media(max-width: 768px) {
+    .header {
+        font-size: 18px;
+    }
     .welcome__img {
         display: flex;
         flex-direction: column;
@@ -180,4 +184,5 @@ body {
     .video {
         display: block;
     }
+
 }
