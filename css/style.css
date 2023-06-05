@@ -249,11 +249,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-items: center;
+    justify-content: center;
+}
+.destinos__img img {
+    width: 90%;
 }
 .destinos__img span {
     display: flex;
     color: white;
     justify-content: center;
+    width: 90%;
     font-size: 20px;
     font-weight: bold;
     background-color: #2B303A;
@@ -350,16 +355,20 @@
     .contacto__map iframe {
         width: 70%;
         height: 350px;
+        margin-top: 130px;
     }
+
 }
 
 @media (max-width: 992px) {
     .header {
         flex-wrap: wrap;
+        font-size: 18px;
     }
     .qs__container {
         display: flex;
         flex-direction: column;
+        margin-top: 200px;
     }
     .welcome__img {
         grid-template-columns: 1fr;
@@ -381,7 +390,10 @@
         grid-template-columns: 1fr;
     }
     .eya__card {
-        width: 50%;
+        width: 100%;
+    }
+    .eya__card img {
+        width: 100%;
     }
 }
 @media (max-width: 1200px) {
@@ -396,6 +408,13 @@
     }
     .welcome__info__img2 {
         display: none;
+    }
+    .destinos__img {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .destinos__titular {
+        margin-top: 200px;
     }
 }
 
