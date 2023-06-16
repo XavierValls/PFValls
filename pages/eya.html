@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excursiones & Actividades</title>
-    <script src="https://kit.fontawesome.com/24bd6312af.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excursiones & Actividades</title>
+  <script src="https://kit.fontawesome.com/24bd6312af.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@400;700&display=swap"
-        rel="stylesheet">
+  <link rel="stylesheet" href="../sass/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body class="body__propio">
 
-    <header class="header">
-        <div class="header__logo">
-            <span>SÖDER</span>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid header">
+        <span class="header__logo"><a href="../index.html"><img
+              src="../img/soder-high-resolution-logo-color-on-transparent-background.png" width="150px"></a></span>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header__menu">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./qs.html">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./eya.html">Excursiones & Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
         </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/qs.html">¿Quienes Somos?</a></li>
-                <li><a href="../pages/destinos.html">Destinos</a></li>
-                <li><a href="../pages/eya.html">Excursiones & Actividades</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main class="eya__container">
-        <div class="destinos__titular">
-            <h3>Excursiones & Actividades</h3>
-        </div>
-        <div class="eya__card">
-            <img src="../img/snowboard.jpg" alt="">
-            <span>Snowboard</span>
-            <p>Para los amantes del snowboard y la nieve. Ofrecemos distintos destinos a estos lugares maravillosos.</p>
-        </div>
-        <div class="eya__card">
-            <img src="../img/hiking.jpg" alt="">
-            <span>Hiking</span>
-            <p>Explora y disfruta de buenas vistas con tus compañeros.</p>
-        </div>
-        <div class="eya__card">
-            <img src="../img/guías-definitive.jpg" alt="">
-            <span>Trekking</span>
-            <p>Para los mas experimentados y los que quieren un recorrido mas largo y complicado.</p>
-        </div>
-    </main>
+  <main class="eya__container">
+    <div class="destinos__titular">
+      <h1>Excursiones & Actividades</h1>
+    </div>
+    <div class="eya__grid">
+      <div>
+        <img src="../img/snowboard.jpg" alt="Snowboard">
+        <span>Snowboard</span>
+        <p>Para los amantes del snowboard y la nieve. Ofrecemos distintos destinos a estos lugares maravillosos.</p>
+      </div>
+      <div>
+        <img src="../img/hiking.jpg" alt="Hiking">
+        <span>Hiking</span>
+        <p>Explora y disfruta de buenas vistas con tus compañeros.</p>
+      </div>
+      <div>
+        <img src="../img/guías-definitive.jpg" alt="Trekking">
+        <span>Trekking</span>
+        <p>Para los mas experimentados y los que quieren un recorrido mas largo y complicado.</p>
+      </div>
+    </div>
+  </main>
 
-    <footer class="footer">
-        <div class="footer__form">
-            <h3 class="footer_nl">Suscribite a nuestro Newsletter</h3>
-            <form action="" method="get" enctype="text/plain">
-                <label for="email"></label>
-                <input type="email" name="" id="email">
-                <input type="submit" value="Enviar">
-            </form>
-            <div class="footer__social">
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <p><strong>All copyrights reserved</strong></p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer__form">
+      <h3 class="footer_nl">Suscribite a nuestro Newsletter</h3>
+      <form action="" method="get" enctype="text/plain">
+        <label for="email"></label>
+        <input type="email" name="" id="email">
+        <input type="submit" value="Enviar">
+      </form>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p><strong>All copyrights reserved</strong></p>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>

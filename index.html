@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SÖDER</title>
     <script src="https://kit.fontawesome.com/24bd6312af.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@400;700&display=swap"
@@ -17,30 +16,49 @@
 
 <body class="body__propio">
 
-    <header class="header">
-        <div class="header__logo">
-            <span>SÖDER</span>
-        </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/qs.html">¿Quienes Somos?</a></li>
-                <li><a href="./pages/destinos.html">Destinos</a></li>
-                <li><a href="./pages/eya.html">Excursiones & Actividades</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid header">
+              <span class="header__logo"><a href="./index.html"><img src="./img/soder-high-resolution-logo-color-on-transparent-background.png" alt="logo" width="150px"></a></span>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header__menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/qs.html">¿Quienes Somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/destinos.html">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/eya.html">Excursiones & Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="welcome">
         <div class="welcome__info">
             <div class="welcome__info__img1">
-                <img src="./img/mano-mujer-sosteniendo-camara-pie-cima-roca-naturaleza-concepto-viaje.jpg" alt="">
+                <img src="./img/mano-mujer-sosteniendo-camara-pie-cima-roca-naturaleza-concepto-viaje.jpg" alt="imagen de fondo">
             </div>
             <div class="welcome__info__img2">
-                <img src="./img/pareja-turistas-mochilas-montana.jpg" alt="">
+                <img src="./img/pareja-turistas-mochilas-montana.jpg" alt="imagen de fondo">
             </div>
-            <h2>WELCOME TO SÖDER</h2>
+            <h1>WELCOME TO SÖDER</h1>
             <p>Bievenidos a la pagina oficial de nuestra empresa de Turismo & Viajes.
                 Encontraras todo tipos de destinos nacionales y pronto internacionales!.
             </p>
@@ -49,15 +67,15 @@
 
         <div class="welcome__img">
             <div>
-                <img src="./img/viaje-avion-avion-viaje.jpg" alt="">
+                <img src="./img/viaje-avion-avion-viaje.jpg" alt="imagen de avion">
                 <h3>Viaja y suma puntos</h3>
             </div>
             <div>
-                <img src="./img/embalaje-maletas-preparaciones-viaje.jpg" alt="">
+                <img src="./img/embalaje-maletas-preparaciones-viaje.jpg" alt="imagen de maleta">
                 <h3>Canjea los puntos por recompenzas increibles</h3>
             </div>
             <div>
-                <img src="./img/mujeres-turistas-mano-tienen-feliz-mapa-viaje.jpg" alt="">
+                <img src="./img/mujeres-turistas-mano-tienen-feliz-mapa-viaje.jpg" alt="imagen de mujer en un viaje">
                 <h3>Disfruta con tu familia y amigos</h3>
             </div>
         </div>
@@ -80,21 +98,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/bariloche-resized.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/bariloche-resized.jpg" class="d-block w-100" alt="Bariloche">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Bariloche</h5>
                         <p>Descuento del 20% con 5000 puntos!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/mendoza-resized.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/mendoza-resized.jpg" class="d-block w-100" alt="Mendoza">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Mendoza</h5>
                         <p>Paquete de viaje con excursiones incluidas.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/snowboard.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/snowboard.jpg" class="d-block w-100" alt="Snowboard">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Snowboard</h5>
                         <p>Consegui equipo incluido sin cargo en los proximos viajes!.</p>
@@ -117,10 +135,7 @@
     <section class="video">
         <div class="video__info">
             <h3>¡No te pierdas nuestro ultimo Video!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias maxime laudantium rerum repellat
-                pariatur inventore quas quos consequuntur facilis minima dolore ut, vero suscipit nobis dolor!
-                Assumenda,
-                perspiciatis dolorem.</p>
+            <p>11 Lugares en Bariloche que debes visitar si o si. En este video te mostramos los mejores lugares de turismo en Bariloche, incluyendo la famosa ruta de los 7 lagos, cerros, refugios y mucho mas.</p>
         </div>
         <div class="video__frame">
             <iframe src="https://www.youtube.com/embed/XSniaD32HKU" title="YouTube video player" frameborder="0"

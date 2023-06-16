@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/24bd6312af.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@400;700&display=swap"
@@ -16,19 +16,38 @@
 </head>
 <body class="body__propio">
 
-    <header class="header">
-        <div class="header__logo">
-            <span>SÖDER</span>
-        </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/qs.html">¿Quienes Somos?</a></li>
-                <li><a href="../pages/destinos.html">Destinos</a></li>
-                <li><a href="../pages/eya.html">Excursiones & Actividades</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid header">
+              <span class="header__logo"><a href="../index.html"><img src="../img/soder-high-resolution-logo-color-on-transparent-background.png" width="150px"></a></span>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header__menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./qs.html">¿Quienes Somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./destinos.html">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./eya.html">Excursiones & Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="qs__container">
@@ -36,7 +55,7 @@
             <img src="../img/quienes-somos.jpg" alt="Quienes somos">
         </div>
         <div class="qs__info">
-            <h3><strong>¿Quienes Somos?</strong> </h3>
+            <h1><strong>¿Quienes Somos?</strong> </h1>
             <p>Somos una empresa de turismo de la provincia de Rio Negro. Empezamos desde el 2019 con viajes de pocas personas y a destinos cercanos a la provincia, cada vez eramos mas y mas gente. Luego, en el 2021, pudimos expandir los viajes a las distintas provincias del territorio Argentino. Actualmente estamos trabajando para poder empezar a hacer viajes internacionales. </p>
         </div>
     </main>
