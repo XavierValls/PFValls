@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 1c388f3032e2fb21b4f8fff713ac1d4894374137
 ## Proyecto web de CoderHouse
 
 **Tema:** Empresa de Turismo Nacional ficticia.
