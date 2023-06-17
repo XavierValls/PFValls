@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="../sass/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@400;700&display=swap"
@@ -56,21 +57,21 @@
   </header>
 
   <main class="eya__container">
-    <div class="destinos__titular">
+    <div class="destinos__titular" data-aos="fade-down" data-aos-duration="1000">
       <h1>Excursiones & Actividades</h1>
     </div>
     <div class="eya__grid">
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1000">
         <img src="../img/snowboard.jpg" alt="Snowboard">
         <span>Snowboard</span>
         <p>Para los amantes del snowboard y la nieve. Ofrecemos distintos destinos a estos lugares maravillosos.</p>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1500">
         <img src="../img/hiking.jpg" alt="Hiking">
         <span>Hiking</span>
         <p>Explora y disfruta de buenas vistas con tus compañeros.</p>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2000">
         <img src="../img/guías-definitive.jpg" alt="Trekking">
         <span>Trekking</span>
         <p>Para los mas experimentados y los que quieren un recorrido mas largo y complicado.</p>
@@ -98,6 +99,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 

@@ -18,7 +18,6 @@ $background-color_1: #2B303A;
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow-x: hidden;
-	width: 100vw;
 }
 /* Header */
 .header {
@@ -291,7 +290,7 @@ $background-color_1: #2B303A;
 		justify-items: center;
 		justify-content: center;
 		div {
-			width: 100%;
+			width: 90%;
 		}
 		img {
 			width: 90%;
@@ -388,6 +387,19 @@ $background-color_1: #2B303A;
 			margin-top: 130px;
 		}
 	}
+	.destinos__container{
+	.destinos__img {
+		width: 80%;
+		margin: 0 auto;
+		}
+	}
+	.eya__container {
+		.eya__grid {
+			grid-template-columns: 1fr;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
 }
 @media (max-width: 992px) {
 	.header {
@@ -439,7 +451,7 @@ $background-color_1: #2B303A;
 	.eya__container {
 		.eya__grid {
 			grid-template-columns: 1fr;
-			width: 50%;
+			width: 70%;
 			margin: 0 auto;
 		}
 	}
