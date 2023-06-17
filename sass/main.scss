@@ -291,7 +291,7 @@ $background-color_1: #2B303A;
 .destinos__img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 30px;
+	gap: 50px;
 	justify-items: center;
 	justify-content: center;
 
@@ -315,172 +315,178 @@ $background-color_1: #2B303A;
 .eya__container {
 	margin: 150px 20px 20px 20px;
 	width: 100%;
+
 	.eya__grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr 1fr 1fr;
 		gap: 30px;
-		justify-content: center;
 		justify-items: center;
+		justify-content: center;
+
 		img {
 			width: 90%;
 		}
+
 		span {
+			display: flex;
+			color: $color_1;
+			justify-content: center;
+			width: 90%;
 			font-size: 20px;
 			font-weight: bold;
-			text-align: center;
-			color: $color_1;
-			display: flex;
-			flex-direction: column;
+			background-color: $background-color_1;
+			align-items: center;
 		}
+
 		p {
 			color: $color_1;
-			text-align: center;
+			display: none;
 		}
 
 	}
 }
 
-	/* Contacto */
-	.contacto__container {
-		margin: 150px 20px 20px 20px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		justify-content: center;
-		gap: 40px;
+/* Contacto */
+.contacto__container {
+	margin: 150px 20px 20px 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	gap: 40px;
 
-		.qs__info {
-			padding: 10px;
+	.qs__info {
+		padding: 10px;
+	}
+}
+
+.contacto__map {
+	display: flex;
+	justify-content: center;
+
+	iframe {
+		display: flex;
+		height: 450px;
+		width: 650px;
+		justify-content: center;
+	}
+}
+
+/* @media */
+@media (max-width: 768px) {
+	.header {
+		font-size: 18px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.header__menu {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
 		}
+	}
+
+	.welcome__img {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		justify-content: center;
+
+		img {
+			width: 80%;
+		}
+	}
+
+	.welcome__info {
+		p {
+			width: 100%;
+		}
+	}
+
+	.carousel-style {
+		display: none;
+	}
+
+	.video {
+		display: block;
+	}
+
+	.video__frame {
+		iframe {
+			width: 80%;
+		}
+	}
+
+	.body {
+		width: 100%;
 	}
 
 	.contacto__map {
-		display: flex;
-		justify-content: center;
-
 		iframe {
-			display: flex;
-			height: 450px;
-			width: 650px;
-			justify-content: center;
+			width: 70%;
+			height: 350px;
+			margin-top: 130px;
 		}
 	}
+}
 
-	/* @media */
-	@media (max-width: 768px) {
-		.header {
-			font-size: 18px;
-			display: flex;
-			flex-wrap: wrap;
-		}
+@media (max-width: 992px) {
+	.header {
+		flex-wrap: wrap;
+		font-size: 18px;
+	}
 
-		.header__menu {
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 10px;
-			}
-		}
+	.qs__container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 200px;
+	}
 
-		.welcome__img {
-			grid-template-columns: 1fr;
-			justify-items: center;
-			justify-content: center;
+	.welcome__img {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		justify-items: center;
 
-			img {
-				width: 80%;
-			}
-		}
-
-		.welcome__info {
-			p {
-				width: 100%;
-			}
-		}
-
-		.carousel-style {
-			display: none;
-		}
-
-		.video {
-			display: block;
-		}
-
-		.video__frame {
-			iframe {
-				width: 80%;
-			}
-		}
-
-		.body {
+		img {
 			width: 100%;
 		}
+	}
 
-		.contacto__map {
-			iframe {
-				width: 70%;
-				height: 350px;
-				margin-top: 130px;
-			}
+	.video__frame {
+		iframe {
+			width: 80%;
 		}
 	}
 
-	@media (max-width: 992px) {
-		.header {
-			flex-wrap: wrap;
-			font-size: 18px;
-		}
-
-		.qs__container {
-			display: flex;
-			flex-direction: column;
-			margin-top: 200px;
-		}
-
-		.welcome__img {
-			grid-template-columns: 1fr;
-			justify-content: center;
-			justify-items: center;
-
-			img {
-				width: 100%;
-			}
-		}
-
-		.video__frame {
-			iframe {
-				width: 80%;
-			}
-		}
-
-		.video {
-			display: block;
-		}
-
-		.destinos__img {
-			grid-template-columns: 1fr;
-		}
-
+	.video {
+		display: block;
 	}
 
-	@media (max-width: 1200px) {
-		.contacto__container {
-			grid-template-columns: 1fr;
-		}
-
-		.welcome__info__img1 {
-			display: none;
-		}
-
-		.welcome__info__img2 {
-			display: none;
-		}
-
-		.destinos__img {
-			grid-template-columns: 1fr;
-			width: 100%;
-		}
-
-		.destinos__titular {
-			margin-top: 200px;
-		}
+	.destinos__img {
+		grid-template-columns: 1fr;
 	}
+
+}
+
+@media (max-width: 1200px) {
+	.contacto__container {
+		grid-template-columns: 1fr;
+	}
+
+	.welcome__info__img1 {
+		display: none;
+	}
+
+	.welcome__info__img2 {
+		display: none;
+	}
+
+	.destinos__img {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+
+	.destinos__titular {
+		margin-top: 200px;
+	}
+}

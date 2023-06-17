@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SÖDER</title>
     <script src="https://kit.fontawesome.com/24bd6312af.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@400;700&display=swap"
@@ -19,62 +21,69 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid header">
-              <span class="header__logo"><a href="./index.html"><img src="./img/soder-high-resolution-logo-color-on-transparent-background.png" alt="logo" width="150px"></a></span>
-              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header__menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/qs.html">¿Quienes Somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/destinos.html">Destinos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/eya.html">Excursiones & Actividades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"href="./pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-info" type="submit">Search</button>
-                </form>
-              </div>
+                <span class="header__logo"><a href="./index.html"><img
+                            src="./img/soder-high-resolution-logo-color-on-transparent-background.png" alt="logo"
+                            width="150px"></a></span>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header__menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/qs.html">¿Quienes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/eya.html">Excursiones & Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <main class="welcome">
         <div class="welcome__info">
             <div class="welcome__info__img1">
-                <img src="./img/mano-mujer-sosteniendo-camara-pie-cima-roca-naturaleza-concepto-viaje.jpg" alt="imagen de fondo">
+                <img src="./img/mano-mujer-sosteniendo-camara-pie-cima-roca-naturaleza-concepto-viaje.jpg"
+                    alt="imagen de fondo">
             </div>
             <div class="welcome__info__img2">
                 <img src="./img/pareja-turistas-mochilas-montana.jpg" alt="imagen de fondo">
             </div>
-            <h1>WELCOME TO SÖDER</h1>
-            <p>Bievenidos a la pagina oficial de nuestra empresa de Turismo & Viajes.
+            <div class="welcome__info" data-aos="fade-up" data-aos-duration="1000">
+                <h1>WELCOME TO SÖDER</h1>
+                <p>Bievenidos a la pagina oficial de nuestra empresa de Turismo & Viajes.
                 Encontraras todo tipos de destinos nacionales y pronto internacionales!.
-            </p>
-            <p>Te invitamos a conocer nuestra pagina web.</p>
+                </p>
+                <p>Te invitamos a conocer nuestra pagina web.</p>
+            </div>
         </div>
 
         <div class="welcome__img">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="500">
                 <img src="./img/viaje-avion-avion-viaje.jpg" alt="imagen de avion">
                 <h3>Viaja y suma puntos</h3>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="750">
                 <img src="./img/embalaje-maletas-preparaciones-viaje.jpg" alt="imagen de maleta">
                 <h3>Canjea los puntos por recompenzas increibles</h3>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <img src="./img/mujeres-turistas-mano-tienen-feliz-mapa-viaje.jpg" alt="imagen de mujer en un viaje">
                 <h3>Disfruta con tu familia y amigos</h3>
             </div>
@@ -83,7 +92,7 @@
     </main>
 
 
-    <section class="carousel-style">
+    <section class="carousel-style" data-aos="fade-up" data-aos-duration="1000">
         <div class="carousel__info">
             <h2>Nuestras ultimas Promociones & Descuentos</h2>
         </div>
@@ -132,10 +141,11 @@
         </div>
     </section>
 
-    <section class="video">
+    <section class="video" data-aos="fade-up" data-aos-duration="1000">
         <div class="video__info">
             <h3>¡No te pierdas nuestro ultimo Video!</h3>
-            <p>11 Lugares en Bariloche que debes visitar si o si. En este video te mostramos los mejores lugares de turismo en Bariloche, incluyendo la famosa ruta de los 7 lagos, cerros, refugios y mucho mas.</p>
+            <p>11 Lugares en Bariloche que debes visitar si o si. En este video te mostramos los mejores lugares de
+                turismo en Bariloche, incluyendo la famosa ruta de los 7 lagos, cerros, refugios y mucho mas.</p>
         </div>
         <div class="video__frame">
             <iframe src="https://www.youtube.com/embed/XSniaD32HKU" title="YouTube video player" frameborder="0"
@@ -164,6 +174,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
