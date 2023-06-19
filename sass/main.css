@@ -11,6 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Header */
@@ -26,6 +27,7 @@
   justify-content: space-between;
   background-color: #2B303A;
   z-index: 999;
+  overflow-x: hidden;
 }
 .header a {
   text-decoration: none;
@@ -199,6 +201,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  z-index: 998;
 }
 
 .footer__form {
@@ -258,7 +261,7 @@
 
 .destinos__container {
   margin: 150px 20px 20px 20px;
-  width: 100%;
+  width: auto;
 }
 
 .destinos__img {
@@ -267,6 +270,8 @@
   gap: 50px;
   justify-items: center;
   justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 .destinos__img img {
   width: 100%;
@@ -292,7 +297,7 @@
 /* eya */
 .eya__container {
   margin: 150px 20px 20px 20px;
-  width: 100%;
+  width: auto;
 }
 .eya__container .eya__grid {
   display: grid;
@@ -300,6 +305,8 @@
   gap: 50px;
   justify-items: center;
   justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 .eya__container .eya__grid div {
   width: 90%;

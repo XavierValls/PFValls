@@ -12,13 +12,16 @@ $background-color_1: #2B303A;
 	margin: 0px;
 	box-sizing: border-box;
 }
+
 .body__propio {
 	font-family: $font-family_1;
 	background-image: url(https://cutewallpaper.org/21/clean-wallpaper-1920x1080/1920x1080-Clean-Night-Sky-And-Mountains-Peak-1080P-Laptop-.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow-x: hidden;
+	width: 100%;
 }
+
 /* Header */
 .header {
 	display: flex;
@@ -32,39 +35,49 @@ $background-color_1: #2B303A;
 	justify-content: space-between;
 	background-color: $background-color_1;
 	z-index: 999;
+	overflow-x: hidden;
+
 	a {
 		text-decoration: none;
 	}
 }
+
 .header__logo {
 	margin-left: 20px;
 	margin-top: 10px;
 	color: $color_1;
 	text-decoration: none;
+
 	img {
 		width: 150px;
 	}
 }
+
 .header__menu {
 	margin-right: 20px;
 	margin-top: 10px;
 	flex-wrap: wrap;
+
 	ul {
 		display: flex;
 		gap: 25px;
 	}
+
 	li {
 		list-style: none;
+
 		a {
 			text-decoration: none;
 			font-family: $font-family_1;
 			color: $color_1;
+
 			&:hover {
 				color: $color_2;
 			}
 		}
 	}
 }
+
 /* Main */
 .welcome {
 	margin-top: 170px;
@@ -72,6 +85,7 @@ $background-color_1: #2B303A;
 	color: $color_1;
 	width: 100%;
 }
+
 .welcome__img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -79,22 +93,26 @@ $background-color_1: #2B303A;
 	justify-items: center;
 	justify-content: center;
 	margin-top: 550px;
+
 	h3 {
 		display: flex;
 		justify-content: center;
 		justify-items: center;
 		margin-top: 10px;
 	}
+
 	img {
 		width: 100%;
 	}
 }
+
 .welcome__img__container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
 }
+
 .welcome__info {
 	display: flex;
 	flex-direction: column;
@@ -102,11 +120,13 @@ $background-color_1: #2B303A;
 	justify-items: center;
 	font-size: 1.5rem;
 	padding: 50px;
+
 	p {
 		width: 50%;
 		margin: 5px;
 	}
 }
+
 .welcome__info__img1 {
 	img {
 		position: absolute;
@@ -116,6 +136,7 @@ $background-color_1: #2B303A;
 		width: 50%;
 	}
 }
+
 .welcome__info__img2 {
 	img {
 		position: absolute;
@@ -126,28 +147,33 @@ $background-color_1: #2B303A;
 		width: 50%;
 	}
 }
+
 .carousel-style {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin-top: 250px;
 	margin-bottom: 100px;
 }
+
 .carousel__info {
 	color: $color_1;
 	display: flex;
 	justify-content: center;
 }
+
 .carousel-item {
 	h5 {
 		font-size: 25px;
 		font-weight: bold;
 	}
+
 	p {
 		font-size: 20px;
 		font-family: $font-family_2;
 		color: $color_1;
 		font-weight: bold;
 	}
+
 	img {
 		width: auto;
 		height: 400px;
@@ -156,12 +182,14 @@ $background-color_1: #2B303A;
 		object-fit: contain;
 	}
 }
+
 .video {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	color: $color_1;
 	margin-top: 320px;
 }
+
 .video__info {
 	display: flex;
 	flex-direction: column;
@@ -170,13 +198,16 @@ $background-color_1: #2B303A;
 	margin-left: 50px;
 	justify-content: center;
 	align-items: center;
+
 	p {
 		margin-top: 20px;
 	}
 }
+
 .video__frame {
 	display: flex;
 	justify-content: center;
+
 	iframe {
 		display: flex;
 		height: 300px;
@@ -184,6 +215,7 @@ $background-color_1: #2B303A;
 		justify-content: center;
 	}
 }
+
 /* Footer */
 .footer {
 	left: 0;
@@ -196,7 +228,9 @@ $background-color_1: #2B303A;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	z-index: 998;
 }
+
 .footer__form {
 	display: flex;
 	flex-direction: column;
@@ -204,21 +238,26 @@ $background-color_1: #2B303A;
 	align-items: center;
 	justify-items: center;
 	align-content: center;
+
 	p {
 		margin-top: 10px;
 	}
 }
+
 .footer__social {
 	display: flex;
 	gap: 15px;
 	margin-top: 10px;
+
 	a {
 		color: $color_3;
+
 		&:hover {
 			color: $color_2;
 		}
 	}
 }
+
 /* qs */
 .qs__container {
 	display: flex;
@@ -226,19 +265,23 @@ $background-color_1: #2B303A;
 	margin: 150px 20px 20px 20px;
 	gap: 20px;
 }
+
 .qs__img {
 	img {
 		width: 100%;
 	}
 }
+
 .qs__info {
 	color: $color_1;
 	font-size: 24px;
 	width: 80%;
+
 	p {
 		margin-top: 20px;
 	}
 }
+
 /* destinos */
 .destinos__titular {
 	display: flex;
@@ -248,19 +291,25 @@ $background-color_1: #2B303A;
 	font-size: 30px;
 	margin-bottom: 50px;
 }
+
 .destinos__container {
 	margin: 150px 20px 20px 20px;
-	width: 100%;
+	width: auto;
 }
+
 .destinos__img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 50px;
 	justify-items: center;
 	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+
 	img {
 		width: 100%;
 	}
+
 	span {
 		display: flex;
 		color: $color_1;
@@ -271,6 +320,7 @@ $background-color_1: #2B303A;
 		background-color: $background-color_1;
 		align-items: center;
 	}
+
 	button {
 		padding: 10px;
 		margin-top: 10px;
@@ -279,22 +329,30 @@ $background-color_1: #2B303A;
 		margin-top: 10px;
 	}
 }
+
 /* eya */
 .eya__container {
 	margin: 150px 20px 20px 20px;
-	width: 100%;
+	width: auto;
+
+
 	.eya__grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 50px;
 		justify-items: center;
 		justify-content: center;
+		width: 90%;
+		margin: 0 auto;
+
 		div {
 			width: 90%;
 		}
+
 		img {
 			width: 90%;
 		}
+
 		span {
 			display: flex;
 			color: $color_1;
@@ -305,6 +363,7 @@ $background-color_1: #2B303A;
 			background-color: $background-color_1;
 			align-items: center;
 		}
+
 		p {
 			color: $color_1;
 			width: 90%;
@@ -314,6 +373,7 @@ $background-color_1: #2B303A;
 		}
 	}
 }
+
 /* Contacto */
 .contacto__container {
 	margin: 150px 20px 20px 20px;
@@ -321,17 +381,21 @@ $background-color_1: #2B303A;
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	gap: 40px;
+
 	.qs__info {
 		padding: 10px;
+
 		button {
 			margin-top: 10px;
 			padding: 5px 10px;
 		}
 	}
 }
+
 .contacto__map {
 	display: flex;
 	justify-content: center;
+
 	iframe {
 		display: flex;
 		height: 450px;
@@ -339,6 +403,7 @@ $background-color_1: #2B303A;
 		justify-content: center;
 	}
 }
+
 /* @media */
 @media (max-width: 768px) {
 	.header {
@@ -346,6 +411,7 @@ $background-color_1: #2B303A;
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	.header__menu {
 		ul {
 			display: flex;
@@ -353,33 +419,41 @@ $background-color_1: #2B303A;
 			gap: 10px;
 		}
 	}
+
 	.welcome__img {
 		grid-template-columns: 1fr;
 		justify-items: center;
 		justify-content: center;
+
 		img {
 			width: 80%;
 		}
 	}
+
 	.welcome__info {
 		p {
 			width: 100%;
 		}
 	}
+
 	.carousel-style {
 		display: none;
 	}
+
 	.video {
 		display: block;
 	}
+
 	.video__frame {
 		iframe {
 			width: 80%;
 		}
 	}
+
 	.body {
 		width: 100%;
 	}
+
 	.contacto__map {
 		iframe {
 			width: 70%;
@@ -387,12 +461,14 @@ $background-color_1: #2B303A;
 			margin-top: 130px;
 		}
 	}
-	.destinos__container{
-	.destinos__img {
-		width: 80%;
-		margin: 0 auto;
+
+	.destinos__container {
+		.destinos__img {
+			width: 80%;
+			margin: 0 auto;
 		}
 	}
+
 	.eya__container {
 		.eya__grid {
 			grid-template-columns: 1fr;
@@ -400,54 +476,69 @@ $background-color_1: #2B303A;
 			margin: 0 auto;
 		}
 	}
+
+
 }
+
 @media (max-width: 992px) {
 	.header {
 		flex-wrap: wrap;
 		font-size: 18px;
 	}
+
 	.qs__container {
 		display: flex;
 		flex-direction: column;
 		margin-top: 200px;
 	}
+
 	.welcome__img {
 		grid-template-columns: 1fr;
 		justify-content: center;
 		justify-items: center;
+
 		img {
 			width: 100%;
 		}
 	}
+
 	.video__frame {
 		iframe {
 			width: 80%;
 		}
 	}
+
 	.video {
 		display: block;
 	}
+
 	.destinos__img {
 		grid-template-columns: 1fr;
 	}
 }
+
 @media (max-width: 1200px) {
 	.contacto__container {
 		grid-template-columns: 1fr;
 	}
+
 	.welcome__info__img1 {
 		display: none;
 	}
+
 	.welcome__info__img2 {
 		display: none;
 	}
+
 	.destinos__img {
 		grid-template-columns: 1fr;
 		width: 100%;
 	}
+
 	.destinos__titular {
 		margin-top: 200px;
 	}
+
 	.eya__container {
 		.eya__grid {
 			grid-template-columns: 1fr;
