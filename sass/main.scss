@@ -449,12 +449,13 @@ $background-color_1: #2B303A;
 		display: block;
 	}
 	.video__info {
-		width: 80%;
-	}
-	.video__frame {
-		iframe {
+		width: auto;
+		p {
 			width: 80%;
 		}
+	}
+	.video__frame {
+		width: 100%;
 	}
 
 	.body {

@@ -395,10 +395,13 @@
     display: block;
   }
   .video__info {
+    width: auto;
+  }
+  .video__info p {
     width: 80%;
   }
-  .video__frame iframe {
-    width: 80%;
+  .video__frame {
+    width: 100%;
   }
   .body {
     width: 100%;
