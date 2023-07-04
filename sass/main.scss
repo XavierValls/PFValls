@@ -120,6 +120,7 @@ $background-color_1: #2B303A;
 	justify-items: center;
 	font-size: 1.5rem;
 	padding: 50px;
+	text-align: center;
 
 	p {
 		width: 50%;
@@ -198,6 +199,7 @@ $background-color_1: #2B303A;
 	margin-left: 50px;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 
 	p {
 		margin-top: 20px;
@@ -276,9 +278,12 @@ $background-color_1: #2B303A;
 	color: $color_1;
 	font-size: 24px;
 	width: 80%;
-
+	h1 {
+		text-align: center;
+	}
 	p {
 		margin-top: 20px;
+		text-align: center;
 	}
 }
 

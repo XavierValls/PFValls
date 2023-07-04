@@ -104,6 +104,7 @@
   justify-items: center;
   font-size: 1.5rem;
   padding: 50px;
+  text-align: center;
 }
 .welcome__info p {
   width: 50%;
@@ -173,6 +174,7 @@
   margin-left: 50px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .video__info p {
   margin-top: 20px;
@@ -245,8 +247,12 @@
   font-size: 24px;
   width: 80%;
 }
+.qs__info h1 {
+  text-align: center;
+}
 .qs__info p {
   margin-top: 20px;
+  text-align: center;
 }
 
 /* destinos */
