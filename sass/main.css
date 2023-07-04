@@ -394,6 +394,9 @@
   .video {
     display: block;
   }
+  .video__info {
+    width: 80%;
+  }
   .video__frame iframe {
     width: 80%;
   }
@@ -424,6 +427,9 @@
     display: flex;
     flex-direction: column;
     margin-top: 200px;
+  }
+  .qs__info {
+    width: 100%;
   }
   .welcome__img {
     grid-template-columns: 1fr;

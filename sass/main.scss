@@ -448,7 +448,9 @@ $background-color_1: #2B303A;
 	.video {
 		display: block;
 	}
-
+	.video__info {
+		width: 80%;
+	}
 	.video__frame {
 		iframe {
 			width: 80%;
@@ -495,6 +497,9 @@ $background-color_1: #2B303A;
 		display: flex;
 		flex-direction: column;
 		margin-top: 200px;
+	}
+	.qs__info {
+		width: 100%;
 	}
 
 	.welcome__img {
