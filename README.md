@@ -3,7 +3,7 @@
 
 **Tema:** Empresa de Turismo Nacional ficticia.
 
-**Fase actual:** Tercera PreEntrega.
+**Fase actual:** Proyecto Final.
 
 
 
